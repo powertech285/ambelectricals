@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request a Quote | AMB Electricals & Services</title>
+    <meta name="description" content="Submit a quotation request for electrical installations, maintenance, repairs, solar systems, and protection services." />
+    <meta name="keywords" content="request quote electrical services, quotation form AMB Electricals" />
+    <meta property="og:title" content="Request a Quote | AMB Electricals & Services" />
+    <meta property="og:description" content="Professional quotation request form for projects of any size." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-ring"></div>
+      <p>Preparing quote request</p>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <a href="https://wa.me/254757920378?text=Hello%20AMB%20Electricals%20%26%20Services.%20I%20found%20your%20website%20and%20would%20like%20to%20request%20your%20electrical%20services." class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:+254757920378" class="call-now-btn">Call Now</a>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <span class="brand-mark">AMB</span>
+            <span class="brand-text">Electricals & Services</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link btn-quote active" href="quote.html">Request a Quote</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="text-center" data-aos="fade-up">
+            <p class="eyebrow">Request a Quote</p>
+            <h1>Share your project details and we’ll prepare a tailored proposal.</h1>
+            <p>All quotation enquiries are directed to amelectricals843@gmail.com for professional follow-up.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5" data-aos="fade-right">
+              <div class="glass-card p-4 h-100">
+                <h3>What to Expect</h3>
+                <ul class="feature-list">
+                  <li><i class="fas fa-check-circle"></i> Prompt response to your enquiry</li>
+                  <li><i class="fas fa-check-circle"></i> Clear project understanding and scope review</li>
+                  <li><i class="fas fa-check-circle"></i> Professional quotation prepared for your requirements</li>
+                  <li><i class="fas fa-check-circle"></i> Support for installation, maintenance, and renewable energy projects</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left">
+              <div class="glass-card p-4">
+                <form class="contact-form" id="quoteForm">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="fullName">Full Name</label>
+                      <input class="form-control" id="fullName" type="text" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="phone">Phone Number</label>
+                      <input class="form-control" id="phone" type="tel" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="email">Email Address</label>
+                      <input class="form-control" id="email" type="email" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="location">Location</label>
+                      <input class="form-control" id="location" type="text" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="service">Service Required</label>
+                      <input class="form-control" id="service" type="text" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="budget">Budget (Optional)</label>
+                      <input class="form-control" id="budget" type="text" />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="date">Preferred Date</label>
+                      <input class="form-control" id="date" type="date" />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="description">Project Description</label>
+                      <textarea class="form-control" id="description" rows="6" required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-success" id="quoteSuccess">Thank you. Your quotation request has been received and will be directed to our team at amelectricals843@gmail.com.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4>AMB Electricals & Services</h4>
+            <p>Delivering professional electrical engineering solutions with safety, precision, and long-term value.</p>
+          </div>
+          <div class="col-lg-2">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>Services</h5>
+            <ul>
+              <li>Electrical Installation</li>
+              <li>Maintenance & Repairs</li>
+              <li>Protection Systems</li>
+              <li>Solar Solutions</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>Contact</h5>
+            <ul>
+              <li><i class="fas fa-phone"></i> +254 757 920 378</li>
+              <li><i class="fas fa-envelope"></i> amelectricals843@gmail.com</li>
+              <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254757920378" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 AMB Electricals & Services. All rights reserved.</p>
+          <div class="social-links">
+            <a href="https://wa.me/254757920378" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:amelectricals843@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

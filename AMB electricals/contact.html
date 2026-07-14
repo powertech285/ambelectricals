@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact AMB Electricals & Services</title>
+    <meta name="description" content="Contact AMB Electricals & Services for electrical installations, repairs, maintenance, solar systems, and protection services." />
+    <meta name="keywords" content="contact AMB Electricals, electrical company Kenya, WhatsApp AMB Electricals" />
+    <meta property="og:title" content="Contact AMB Electricals & Services" />
+    <meta property="og:description" content="Reach out to AMB Electricals & Services for quotations and service requests." />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-ring"></div>
+      <p>Loading contact details</p>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <a href="https://wa.me/254757920378?text=Hello%20AMB%20Electricals%20%26%20Services.%20I%20found%20your%20website%20and%20would%20like%20to%20request%20your%20electrical%20services." class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener noreferrer">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="tel:+254757920378" class="call-now-btn">Call Now</a>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <span class="brand-mark">AMB</span>
+            <span class="brand-text">Electricals & Services</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+              <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+              <li class="nav-item"><a class="nav-link btn-quote" href="quote.html">Request a Quote</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <div class="text-center" data-aos="fade-up">
+            <p class="eyebrow">Contact Us</p>
+            <h1>Get in touch for quotations, site consultations, or project support.</h1>
+            <p>We welcome enquiries for electrical installations, repairs, maintenance, solar systems, and protection services.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-lg-5" data-aos="fade-right">
+              <div class="glass-card p-4 h-100">
+                <h3>Contact Information</h3>
+                <ul class="feature-list">
+                  <li><i class="fas fa-phone"></i> +254 757 920 378</li>
+                  <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254757920378" target="_blank" rel="noopener noreferrer">+254 757 920 378</a></li>
+                  <li><i class="fas fa-envelope"></i> amelectricals843@gmail.com</li>
+                  <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                  <li><i class="fas fa-clock"></i> Mon – Sat: 8:00 AM – 6:00 PM</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-7" data-aos="fade-left">
+              <div class="glass-card p-4">
+                <h3>Send a Message</h3>
+                <form class="contact-form" id="contactForm">
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="name">Full Name</label>
+                      <input class="form-control" id="name" type="text" required />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="email">Email Address</label>
+                      <input class="form-control" id="email" type="email" required />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="subject">Subject</label>
+                      <input class="form-control" id="subject" type="text" required />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="message">Message</label>
+                      <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-success" id="contactSuccess">Thank you. Your enquiry has been received. We will get back to you shortly.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section py-5 bg-dark-soft">
+        <div class="container">
+          <div class="glass-card p-4 p-lg-5" data-aos="fade-up">
+            <div class="row g-4 align-items-stretch">
+              <div class="col-lg-5">
+                <h3>Business Location</h3>
+                <p>Based in Nairobi, Kenya, we serve clients across the region and are available for site visits, consultations, and project delivery.</p>
+                <ul class="feature-list">
+                  <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                  <li><i class="fas fa-phone"></i> +254 757 920 378</li>
+                  <li><i class="fas fa-envelope"></i> amelectricals843@gmail.com</li>
+                </ul>
+                <a class="btn btn-primary mt-2" href="https://www.google.com/maps/search/?api=1&query=Nairobi+Kenya" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+              </div>
+              <div class="col-lg-7">
+                <div class="map-embed">
+                  <iframe src="https://www.google.com/maps?q=Nairobi%20Kenya&z=12&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AMB Electricals & Services location"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h4>AMB Electricals & Services</h4>
+            <p>Delivering professional electrical engineering solutions with safety, precision, and long-term value.</p>
+          </div>
+          <div class="col-lg-2">
+            <h5>Quick Links</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="projects.html">Projects</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>Services</h5>
+            <ul>
+              <li>Electrical Installation</li>
+              <li>Maintenance & Repairs</li>
+              <li>Protection Systems</li>
+              <li>Solar Solutions</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>Contact</h5>
+            <ul>
+              <li><i class="fas fa-phone"></i> +254 757 920 378</li>
+              <li><i class="fas fa-envelope"></i> amelectricals843@gmail.com</li>
+              <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/254757920378" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 AMB Electricals & Services. All rights reserved.</p>
+          <div class="social-links">
+            <a href="https://wa.me/254757920378" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            <a href="mailto:amelectricals843@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
